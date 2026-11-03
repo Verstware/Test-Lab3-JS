@@ -1,0 +1,9 @@
+{
+  "name": "js-shopping-cart-lab",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "coverage": "c8 --check-coverage --lines 80 node --test"
+  }
+}
