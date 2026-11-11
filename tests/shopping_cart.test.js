@@ -51,10 +51,10 @@ test('test_total_price_and_promo', () => {
     cart.addItem(product2, 1);
     assert.strictEqual(cart.getTotalPrice(), 400.0);
     
-    cart.apply_promo("DISCOUNT10");
+    cart.applyPromo("DISCOUNT10");
     assert.strictEqual(cart.getTotalPrice(), 360.0);
     
     assert.throws(() => {
-        cart.apply_promo("WRONGCODE");
+        cart.applyPromo("WRONGCODE");
     }, /Неверный промокод/);
 });
